@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__content">
+            <h1 class="logo">Password Generator</h1>
+            <div class="result__section">
+                <p class="result__text">PTx1f5DaFX</p>
+                <button><img src="img/copy-icon.svg" alt=""></button>
+            </div>
+            <div class="generate__section">
+                <div class="length">
+                    <p class="length__text">Character Length</p>
+                    <p class="length__num">10</p>
+                </div>
+                <input class="range" type="range" min="0" max="20" value="10">
+                <form class="checkboxes">
+                    <label for="">
+                        <input type="checkbox">
+                        Include Uppercase Letters
+                    </label>
+                    <label for="">
+                        <input type="checkbox">
+                        Include Lowercase Letters
+                    </label>
+                    <label for="">
+                        <input type="checkbox">
+                        Include Numbers
+                    </label>
+                    <label for="">
+                        <input type="checkbox">
+                        Include Symbols
+                    </label>
+                </form>
+                <div class="strength-box">
+                    <p class="strength__label">Strength</p>
+                    <div class="strength__level">
+                        <p class="strength__level__text">Too Weak!</p>
+                        <div class="strength__level__col-box">
+                            <div class="strength__level__col"></div>
+                            <div class="strength__level__col"></div>
+                            <div class="strength__level__col"></div>
+                            <div class="strength__level__col"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="generate__btn">Generate<img src="img/arrow-icon.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
